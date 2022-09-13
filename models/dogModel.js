@@ -21,19 +21,15 @@ const DogSchema = new mongoose.Schema({
   isAggressive: {
     type: Boolean,
   },
-  isShortHaired: {
+  isSocialDog: {
     type: Boolean,
-  },
-  favoriteToys: {
-    type: [String],
-  },
-  canSing: {
-    type: Boolean,
-    default: false,
   },
   canFly: {
     type: Boolean,
     default: false,
+  },
+  favoriteToys: {
+    type: [String],
   },
   isBoss: {
     type: Boolean,

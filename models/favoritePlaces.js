@@ -2,15 +2,11 @@ import mongoose from 'mongoose';
 
 const FavoritePlaceSchema = new mongoose.Schema({
   place: {
-    place: String,
+    type: String,
     required: true,
   },
   isIndoor: {
     type: Boolean,
-    required: true,
-  },
-  placeType: {
-    type: String,
     required: true,
   },
   temperature: {
@@ -29,7 +25,7 @@ const FavoritePlaceSchema = new mongoose.Schema({
     type: String,
   },
   animal: {
-    type: [String],
+    type: [Object],
     default: [],
   },
 });
