@@ -52,11 +52,3 @@ export const deleteCatById = async (req, res) => {
     throw error;
   }
 };
-
-// export default {
-//   createCat,
-//   updateCatById,
-//   getCatById,
-//   getAllCats,
-//   deleteCatById,
-// };

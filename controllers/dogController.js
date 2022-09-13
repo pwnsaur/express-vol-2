@@ -52,11 +52,3 @@ export const deleteDogById = async (req, res) => {
     throw error;
   }
 };
-
-// export default {
-//   createDog,
-//   updateDogById,
-//   getDogById,
-//   getAllDogs,
-//   deleteDogById,
-// };

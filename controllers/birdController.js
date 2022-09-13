@@ -52,11 +52,3 @@ export const deleteBirdById = async (req, res) => {
     throw error;
   }
 };
-
-// export default {
-//   createBird,
-//   updateBirdById,
-//   getBirdById,
-//   getAllBirds,
-//   deleteBirdById,
-// };
