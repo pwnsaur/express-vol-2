@@ -79,11 +79,11 @@ export const getAnimals = async (req, res) => {
 
 export const getFavoritePlace = async (req, res) => {
   try {
-    const favoritePlaces = await favoritePlaceModel.find();
-    const popularPlace = favoritePlaces.reduce((prev, curr) => {
+    const favoritePlace = await favoritePlaceModel.find();
+    const favoritePlaces = favoritePlace.reduce((prev, curr) => {
       return prev.animal.length > curr.animal.length ? prev : curr;
     });
-    res.status(200).json(popularPlace.place);
+    res.status(200).json(favoritePlaces.place);
   } catch (error) {
     console.error(error);
   }
